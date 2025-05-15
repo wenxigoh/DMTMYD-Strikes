@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script type="importmap">
+  { "imports": { "appwrite": "https://cdn.jsdelivr.net/npm/appwrite@17.0.1/+esm" } }
+  </script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="fbd90a43-5c5f-4f1a-88c0-817668852fbb"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DMTMYD Strike Checker</title>
+  <link href='/style.css' rel='stylesheet'>
+</head>
+<body>
+  <textarea id="title" inputmode="numeric" placeholder="Enter phone number" maxlength="15"></textarea>
+  <textarea id="text" inputmode="numeric" placeholder="Enter number of strikes (ONLY NEEDED IN ADMIN MODE)" maxlength="1"></textarea>
+  <button id="searchTitle" data-umami-event="Search Phone Number button">Search Phone Number</button>
+  <button id="listAll" data-umami-event="List All Phone Numbers with Strikes button">List All Phone Numbers with Strikes</button>
+  <button id="adminMode" data-umami-event="Admin Mode button">Admin Mode (REQUIRES PASSWORD)</button>
+  <div id="admin-actions"></div>
+  <div id="results"></div>
+  <script src="main_v2.js" type="module"></script>
+</body>
+</html>
